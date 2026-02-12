@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="I)bvRn.egyV~}..ZDr6D">DiceValue</variable><variable id="h./b#GT-q#@0m[w/BcpW">list</variable><variable id="v1cGZt/8[.g[RP+Eu+O-">myImage</variable></variables><block type="function_definition" id="(Dq0/Q,B{uJ.sz;G;`W=" x="-531" y="-441"><mutation name="SetDicePattern" functionid="Y`VBKjLsVUajBo6UhdL@"></mutation><field name="function_name">SetDicePattern</field><statement name="STACK"><block type="variables_set" id="P#xDNWDm0rVzV@=?dDBh"><field name="VAR" id="h./b#GT-q#@0m[w/BcpW">list</field><value name="VALUE"><block type="lists_create_with" id="2g$p!!NKkE(0?$Pa+VVM" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><block type="device_build_image" id="c*)Xnju`RW.8yJRQg@3("><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><block type="device_build_image" id="FG3WsodAaMjXeicxVE7;"><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . . . . 
+        . # . . . 
+        . . . . .
+        `</field></block></value><value name="ADD2"><block type="device_build_image" id="oGcw}W-K!6mdar!h(pNU"><field name="LEDS">`
+        . . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . .
+        `</field></block></value><value name="ADD3"><block type="device_build_image" id="7tz36|(a;Fdeq^^wij}("><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field></block></value><value name="ADD4"><block type="device_build_image" id="rlwI.)UHX{?yaf,g+#)9"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . #
+        `</field></block></value><value name="ADD5"><block type="device_build_image" id="}6,T*JhZLj:DAvwTM2Rc"><field name="LEDS">`
+        # . # . # 
+        . . . . . 
+        # . # . # 
+        . . . . . 
+        # . # . #
+        `</field></block></value></block></value></block></statement></block><block type="pxt-on-start" id="*CK|s~76^Ws%u~7uuuOa" x="-35" y="-426"><statement name="HANDLER"><block type="function_call" id="?pp[W]md-Ekd;Xx%e|BL"><mutation name="SetDicePattern" functionid="Y`VBKjLsVUajBo6UhdL@"></mutation><next><block type="function_call" id="lch$OR.DVM/E(a|e0G?Y"><mutation name="RollDice" functionid="?I{D}GbdD,6q%}%A(KLH"></mutation></block></next></block></statement></block><block type="function_definition" id="w!Yfsvxuhv)[+hm/9bfQ" x="12" y="-176"><mutation name="RollDice" functionid="?I{D}GbdD,6q%}%A(KLH"></mutation><field name="function_name">RollDice</field><statement name="STACK"><block type="device_show_image_offset" id=".#[u(m1nNE$hru,H8BG1"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="hK{:/.eI~D.o3s~jU;}F"><value name="LIST"><block type="variables_get" id="-~cW*lf,RudEbvvMjM*6"><field name="VAR" id="h./b#GT-q#@0m[w/BcpW">list</field></block></value><value name="INDEX"><shadow type="math_number" id="6oUq@Aj%m+]2x0^JZQ6l"><field name="NUM">0</field></shadow><block type="device_random" id="!Mg$$oxz24wi9#^nfF3+"><value name="min"><shadow type="math_number" id="+`2mJix6+nxs?yQGVc[e"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="t.MSwsO^xMVHhp40GviF"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="XQ)KkFYR(;(~Vw@umGO{"><field name="NUM">0</field></shadow></value><value name="interval"><shadow type="math_number" id="Ugw7m`I.I3fIy#zq7T_m"><field name="NUM">400</field></shadow></value></block></statement></block><block type="device_gesture_event" id="YMu[r2Wd6!ajvLyz;NVk" x="0" y="0"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="function_call" id="WMikoi]~^8SH3@f!wovU"><mutation name="RollDice" functionid="?I{D}GbdD,6q%}%A(KLH"></mutation></block></statement></block></xml>
